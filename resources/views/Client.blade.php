@@ -12,7 +12,7 @@
 
     <h2 class="align-content-center text-success"><a href="{{url('/Client')}}/{{ $client->getAuthIdentifier() }}"> Bonjour, {{$client->getAuthIdentifierName()}} </a></h2>
     <p class="align-content-center "> <strong>Vous pouvez ajouter: </strong></p>
-    <p> <form action="{{url('/AjouterAnnonce')}}"><button type="submit" class="btn btn-success">Nouvelle Annonce</button> </form>             <form action="{{url('/AjouterCommentaire')}}"><button type="submit" class="btn btn-sucess">Nouveau Commentaire</button> </form>
+    <p> <form action="{{url('/AjouterAnnonce')}}"><button type="submit" class="btn btn-success">Nouvelle Annonce</button> </form>             <form action="{{url('/AjouterCommentaire')}}"><button type="submit" class="btn btn-success">Nouveau Commentaire</button> </form>
     </p>
     <section>
         <h4 class="align-content-center text-success">Vous annonces:</h4>

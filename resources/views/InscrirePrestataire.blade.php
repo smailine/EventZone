@@ -5,7 +5,7 @@
 @endsection
 
 @section('titre')
-    <h1>Créer un prestataire </h1>
+    <h1 class="text-success">Créer un prestataire </h1>
 @endsection
 @section('contenu')
     <div class="col-sm-offset-3 col-sm-6">
@@ -52,7 +52,7 @@
                     </select>
                 </div>
 
-                {!! Form::submit('Valider', ['class' => 'btn btn-info pull-right']) !!}
+                {!! Form::submit('Valider', ['class' => 'btn btn-success pull-right']) !!}
                 {!! Form::close() !!}
             </div>
         </div>

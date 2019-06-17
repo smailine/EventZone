@@ -22,24 +22,25 @@
     @if($leEtab->getProfessionnels())
         @foreach($leEtab->getProfessionnels() as $presta)
             <prestataire>
-                <h5><a href="{{url('/Prestataire')}}/{{ $presta->getId() }}">{{$presta->getNom()}} </a></h5>
+                <h5 class="text-success"><a href="{{url('/Prestataire')}}/{{ $presta->getId() }}">{{$presta->getNom()}} </a></h5>
                 <p> Telephone:+33 {{$presta->getTelephone()}} </p>
                 <p> {{$presta->getAdresse()}}</p>
-                <span class="badge badge-primary badge-pill">{{$presta->getNoteClient()}}</span>
+                <span class="badge badge-success badge-pill">{{$presta->getNoteClient()}}</span>
             </prestataire>
         @endforeach
     @else
         <strong>Etablissement en cours d'inscription </strong>
     @endif
     @if($leEtab->getImages())
+        <div id="conteneur">
         <ul class="list-group-horizontal">
             @foreach($leEtab->getImages() as $im)
                 <li><img  src="{{asset($im->getChemin())}}"/></li>
             @endforeach
         </ul>
-
+        </div>
     @endif
-    <h3>Les commentaires nous concernant: </h3>
+    <h3 class="text-success">Les commentaires nous concernant: </h3>
     <ul class="list-group">
         @if($leEtab->getCommentaires())
             @foreach($leEtab->getCommentaires() as $co)

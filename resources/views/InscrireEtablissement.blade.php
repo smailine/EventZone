@@ -5,7 +5,7 @@
 @endsection
 
 @section('titre')
-    <h1>Créer un Etablissement </h1>
+    <h1 class="text-success">Créer un Etablissement </h1>
 @endsection
 @section('contenu')
     <div class="col-sm-offset-3 col-sm-6">

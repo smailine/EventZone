@@ -6,7 +6,7 @@
 @endsection
 
 @section('titre')
-    <h1 class="align-content-center">La Prestataire: {{$laprestataire->getNom()}}</h1>
+    <h1 class="align-content-center text-success">La Prestataire: {{$laprestataire->getNom()}}</h1>
 @endsection
 
 @section('contenu')
@@ -34,12 +34,13 @@
         @endif
     @endif
     @if($laprestataire->getImages())
+        <div id="conteneur">
         <ul class="list-group-horizontal">
             @foreach($laprestataire->getImages() as $im)
                 <li><img  src="{{asset($im->getChemin())}}"></li>
             @endforeach
         </ul>
-
+        </div>
     @endif
 
     <ul class="list-group">
@@ -52,7 +53,7 @@
                         <p class="align-content-center">
                             {{$co->getDescription()}}
                         </p>
-                        <div class="progress">Evaluation:<div class="progress-bar" style="width:{{$co->getNote()*100/5}}%">{{$co->getNote()*100/5}}%</div> </div>
+                        <div class="progress">Evaluation:<div class="progress-bar " style="width:{{$co->getNote()*100/5}}%">{{$co->getNote()*100/5}}%</div> </div>
                     </commentaire>
 
                 </li>

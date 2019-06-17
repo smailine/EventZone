@@ -5,7 +5,7 @@
 @endsection
 
 @section('titre')
-    <h1>Confirmation de l'enregistrement</h1>
+    <h1 class="text-success">Confirmation de l'enregistrement</h1>
 @endsection
 
 @section('contenu')

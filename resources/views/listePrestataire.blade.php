@@ -14,7 +14,7 @@
     @foreach($lesPrestataires as $presta)
             <li class="list-group-item d-flex justify-content-between align-items-center">
                 <prestataire>
-                    <h2 class="align-content-center text-success"><a href="{{url('/Prestataire')}}/{{ $presta->getId() }}">{{$presta->getNom()}} </a></h2>
+                    <h2 class="align-content-center text-success"><a class="text-success" href="{{url('/Prestataire')}}/{{ $presta->getId() }}">{{$presta->getNom()}} </a></h2>
                     <p> Telephone:+33 {{$presta->getTelephone()}} </p>
                     <p> {{$presta->getAdresse()}}</p>
                     <span class="badge badge-success badge-pill">{{$presta->getNoteClient()}}</span>
