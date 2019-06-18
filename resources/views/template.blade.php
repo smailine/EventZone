@@ -28,7 +28,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-warning  static-top">
     <div class="container ">
-        <a class="navbar  " href="{{url('/Acueil')}}"><img src='{{asset('image/logo.jpg')}}' width="25%"/> </a>
+        <a class="navbar  " href="{{url('/Acueil')}}"><img src='{{asset('image/logo.jpg')}}' width="30%"/> </a>
         <a href="{{url('/Acueil')}}">Accueil <span></span></a>
                 <a href="{{url("/listePrestataire")}}">Liste des prestataires</a>
                 <a href="{{url("/InscrirePrestataire")}}">Ajouter un prestataire</a>
