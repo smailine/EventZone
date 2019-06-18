@@ -19,7 +19,7 @@ Route::get('/listePrestataire','PrestataireController@getPrestataires');
 Route::get('/Prestataire/{id}','PrestataireController@getPrestataire')->where('id', '[0-9]+');
 Route::get('/listePrestataire/{ville}','PrestataireController@ggetPrestatairesParVille');
 Route::get('/listePrestataire/{profession}','PrestataireController@getPrestatairesParProfession');
-Route::get('/Acueil','PrestataireController@Acueil');
+Route::get('/Accueil','PrestataireController@Acueil');
 Route::get('/InscrirePrestataire','PrestataireController@InscrirePrestataire');
 Route::post('/saisiePrestataire','PrestataireController@postInscrirePrestataire');
 
